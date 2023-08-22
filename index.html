@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
 <body>
+  <div class="container">
 
-  We're coming soon
+    <header class="header">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    </header>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <main>
+      <div class="main-container">
+        <div class="main-container-image">
+          <img src="./images/hero-mobile.jpg" alt="image of a girl">
+        </div>
+        <div class="content">
+          <h1 class="h1">We're <br>
+            <span>coming soon</span>
+          </h1>
+          <p class="description">
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <form action="#" class="form">
+            <input type="email" placeholder="Email Address">
+            <img src="./images/icon-error.svg" class=" icon-error" autocomplete="off">
+            <div class="container-arrow">
+              <img src="./images/icon-arrow.svg">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">César Yeguez</a>.
+      </p>
+    </footer>
+  </div>
 </body>
+
 </html>

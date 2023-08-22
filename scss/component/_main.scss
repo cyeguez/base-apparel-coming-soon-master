@@ -1,0 +1,110 @@
+@use "../utlis/var" as v;
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1fr 1fr;
+
+  .main-container-image {
+    width: 100%;
+
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+  .content{
+   
+    
+
+  .h1 {
+    margin-top: 4rem;
+    font-size: 40px;
+    color: v.$color-primary;
+    font-family: v.$font;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+
+    span {
+      color: v.$color-neutral;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      letter-spacing: 12px;
+      line-height: 16px;
+    }
+  }
+  p {
+    margin-top: 30px;
+    margin-inline: 32px;
+    color: v.$color-primary;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-family: v.$font;
+  }
+  }
+  .form {
+    width: 100%;
+   
+    margin: 40px auto 90px auto;
+    padding-inline: 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.7;
+    position: relative;
+
+    input[type="email"] {
+      width: 100%;
+      max-width: 25rem;
+      height: 50px;
+      border-radius: 32px;
+      border: 0.5px solid v.$color-primary;
+      padding-left: 16px;      
+      position: relative;
+
+      &::placeholder {
+        font-size: 12px;
+        font-family: v.$font;
+        color: v.$color-primary;
+        font-weight: 400;
+      }
+    }
+
+    .icon-error {
+      position: absolute;
+      left: 70%;
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .container-arrow {
+      width: 63px;
+      height: 50px;
+      border-radius: 30px;
+      background-color: v.$color-secundary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      box-shadow: 5px 5px 10px v.$color-primary;
+      cursor: pointer;
+
+      img {
+        width: 10px;
+      }
+    }
+  }
+}

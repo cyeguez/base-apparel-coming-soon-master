@@ -1,0 +1,14 @@
+@use "./utlis/_var.scss" as v;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body{
+  overflow-x: hidden;
+  font-size: 16px;
+  background: v.$color-gradient1 v.$color-gradient2;
+}

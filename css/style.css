@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.header {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 2rem;
+}
+.header .logo {
+  width: 100px;
+  height: 21px;
+}
+.header .logo img {
+  width: 100%;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1fr 1fr;
+}
+.main-container .main-container-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-container .main-container-image img {
+  width: 100%;
+}
+.main-container .content .h1 {
+  margin-top: 4rem;
+  font-size: 40px;
+  color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+.main-container .content .h1 span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 12px;
+  line-height: 16px;
+}
+.main-container .content p {
+  margin-top: 30px;
+  margin-inline: 32px;
+  color: hsl(0, 36%, 70%);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans";
+}
+.main-container .form {
+  width: 100%;
+  margin: 40px auto 90px auto;
+  padding-inline: 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  opacity: 0.7;
+  position: relative;
+}
+.main-container .form input[type=email] {
+  width: 100%;
+  max-width: 25rem;
+  height: 50px;
+  border-radius: 32px;
+  border: 0.5px solid hsl(0, 36%, 70%);
+  padding-left: 16px;
+  position: relative;
+}
+.main-container .form input[type=email]::placeholder {
+  font-size: 12px;
+  font-family: "Josefin Sans";
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+}
+.main-container .form .icon-error {
+  position: absolute;
+  left: 70%;
+  display: none;
+}
+.main-container .form .active {
+  display: block;
+}
+.main-container .form .container-arrow {
+  width: 63px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: hsl(0, 93%, 68%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: 5px 5px 10px hsl(0, 36%, 70%);
+  cursor: pointer;
+}
+.main-container .form .container-arrow img {
+  width: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../../images/bg-pattern-desktop.svg");
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .container .header {
+    margin: 41px 45px;
+  }
+  .container .main-container {
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .container .main-container-image {
+    grid-column: 2/3;
+  }
+  .container .content {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .container .main-container {
+    padding: 41px 45px;
+  }
+  .container .main-container .h1 {
+    width: 280px;
+    text-align: start;
+  }
+  .container .main-container .description {
+    width: 400px;
+    margin-inline: 0;
+    text-align: start;
+  }
+  .container .main-container .form {
+    padding-inline: 0;
+    justify-content: flex-start;
+  }
+  .container .main-container .form .container-arrow {
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

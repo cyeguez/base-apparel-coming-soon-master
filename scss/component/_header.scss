@@ -1,0 +1,16 @@
+.header {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 2rem;
+
+  .logo {
+    width: 100px;
+    height: 21px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
