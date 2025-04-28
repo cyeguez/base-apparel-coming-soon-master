@@ -6,48 +6,24 @@
   }
   .container {
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 200px, 1fr, 1fr;
 
     .header{
-      margin: 41px 45px;
-    }
-
-    .main-container {
-      place-items: center;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-    }
-
-    .main-container-image {
-      grid-column: 2/3;
-    }
-
-    .content {
       grid-column: 1/2;
-      grid-row: 1;
+      grid-row: 1/2;
+     
+    }
+
+    main{
+      grid-column: 1/2;
+      grid-row: 2/3;
     }
     
-    .main-container{
-      padding: 41px 45px;
-      .h1{
-        width: 280px;
-        text-align: start;
-      }
-      .description{
-        width:400px;
-        margin-inline: 0;
-        text-align: start;
-       
-      }
-
-      .form {
-        padding-inline: 0;
-        justify-content: flex-start;
-
-        .container-arrow{
-          right: 0;
-        }
-      }
-    }
+    
+    
+    
    
   }
 }

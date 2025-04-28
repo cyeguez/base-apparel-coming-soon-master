@@ -12,12 +12,17 @@ body {
   background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 }
 
+footer {
+  margin-top: 4rem;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
 footer .attribution {
-  font-size: 11px;
+  font-size: 10px;
   text-align: center;
 }
 footer .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 36%, 70%);
 }
 
 .header {
@@ -35,17 +40,17 @@ footer .attribution a {
   width: 100%;
 }
 
+.heroe {
+  width: 100%;
+  height: 250px;
+  background-image: url("../../images/bg-pattern-intro-mobile.svg");
+}
+
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column: 1fr 1fr;
-}
-.main-container .main-container-image {
   width: 100%;
-  margin: 0 auto;
-}
-.main-container .main-container-image img {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-container .content .h1 {
   margin-top: 4rem;
@@ -77,11 +82,11 @@ footer .attribution a {
   font-family: "Josefin Sans";
 }
 .main-container .form {
-  width: 100%;
-  margin: 40px auto 90px auto;
-  padding-inline: 32px;
+  width: 19.625rem;
+  margin-top: 2.25rem;
+  margin-inline: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   opacity: 0.7;
@@ -95,6 +100,12 @@ footer .attribution a {
   border: 0.5px solid hsl(0, 36%, 70%);
   padding-left: 16px;
   position: relative;
+}
+.main-container .form input[type=email]::-moz-placeholder {
+  font-size: 12px;
+  font-family: "Josefin Sans";
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
 }
 .main-container .form input[type=email]::placeholder {
   font-size: 12px;
@@ -111,7 +122,7 @@ footer .attribution a {
   display: block;
 }
 .main-container .form .container-arrow {
-  width: 63px;
+  width: 65px;
   height: 50px;
   border-radius: 30px;
   background-color: hsl(0, 93%, 68%);
@@ -134,41 +145,16 @@ footer .attribution a {
   }
   .container {
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 200px, 1fr, 1fr;
   }
   .container .header {
-    margin: 41px 45px;
-  }
-  .container .main-container {
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  .container .main-container-image {
-    grid-column: 2/3;
-  }
-  .container .content {
     grid-column: 1/2;
-    grid-row: 1;
+    grid-row: 1/2;
   }
-  .container .main-container {
-    padding: 41px 45px;
+  .container main {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
-  .container .main-container .h1 {
-    width: 280px;
-    text-align: start;
-  }
-  .container .main-container .description {
-    width: 400px;
-    margin-inline: 0;
-    text-align: start;
-  }
-  .container .main-container .form {
-    padding-inline: 0;
-    justify-content: flex-start;
-  }
-  .container .main-container .form .container-arrow {
-    right: 0;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

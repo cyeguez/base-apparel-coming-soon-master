@@ -1,6 +1,16 @@
-footer{
-  
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
+@use "../utlis/var" as v;
 
+footer {
+  margin-top: 4rem;
+  font-family: v.$font;
+  font-weight: 400;
+ 
+
+  .attribution {
+    font-size: 10px;
+    text-align: center;
+  }
+  .attribution a {
+    color: v.$color-primary;
+  }
 }
