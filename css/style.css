@@ -40,19 +40,30 @@ footer .attribution a {
   width: 100%;
 }
 
-.heroe {
+.hero {
   width: 100%;
   height: 250px;
-  background-image: url("../../images/bg-pattern-intro-mobile.svg");
+  background-image: url("../../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 100%;
+    background-image: url("../../images/hero-desktop.jpg");
+    background-size: cover;
+  }
 }
 
-.main-container {
-  width: 100%;
+.container {
+  max-width: 450px;
+}
+.container .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.main-container .content .h1 {
+.container .main-container .content .h1 {
   margin-top: 4rem;
   font-size: 40px;
   color: hsl(0, 36%, 70%);
@@ -62,7 +73,7 @@ footer .attribution a {
   letter-spacing: 15px;
   text-transform: uppercase;
 }
-.main-container .content .h1 span {
+.container .main-container .content .h1 span {
   color: hsl(0, 6%, 24%);
   font-weight: 700;
   font-size: 40px;
@@ -70,7 +81,7 @@ footer .attribution a {
   letter-spacing: 12px;
   line-height: 16px;
 }
-.main-container .content p {
+.container .main-container .content p {
   margin-top: 30px;
   margin-inline: 32px;
   color: hsl(0, 36%, 70%);
@@ -81,47 +92,45 @@ footer .attribution a {
   letter-spacing: 1px;
   font-family: "Josefin Sans";
 }
-.main-container .form {
+.container .main-container .form {
   width: 19.625rem;
-  margin-top: 2.25rem;
-  margin-inline: 2rem;
+  margin: 2.25rem auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   opacity: 0.7;
   position: relative;
 }
-.main-container .form input[type=email] {
+.container .main-container .form input[type=email] {
   width: 100%;
-  max-width: 25rem;
   height: 50px;
   border-radius: 32px;
   border: 0.5px solid hsl(0, 36%, 70%);
   padding-left: 16px;
   position: relative;
 }
-.main-container .form input[type=email]::-moz-placeholder {
+.container .main-container .form input[type=email]::-moz-placeholder {
   font-size: 12px;
   font-family: "Josefin Sans";
   color: hsl(0, 36%, 70%);
   font-weight: 400;
 }
-.main-container .form input[type=email]::placeholder {
+.container .main-container .form input[type=email]::placeholder {
   font-size: 12px;
   font-family: "Josefin Sans";
   color: hsl(0, 36%, 70%);
   font-weight: 400;
 }
-.main-container .form .icon-error {
+.container .main-container .form .icon-error {
   position: absolute;
   left: 70%;
   display: none;
 }
-.main-container .form .active {
+.container .main-container .form .active {
   display: block;
 }
-.main-container .form .container-arrow {
+.container .main-container .form .container-arrow {
   width: 65px;
   height: 50px;
   border-radius: 30px;
@@ -135,26 +144,82 @@ footer .attribution a {
   box-shadow: 5px 5px 10px hsl(0, 36%, 70%);
   cursor: pointer;
 }
-.main-container .form .container-arrow img {
+.container .main-container .form .container-arrow img {
   width: 10px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    background-image: url("../../images/bg-pattern-desktop.svg");
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin-inline: 3rem;
   }
   .container {
+    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    height: 800px;
+    max-width: 1440px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 200px, 1fr, 1fr;
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: 100px 1fr;
   }
   .container .header {
     grid-column: 1/2;
     grid-row: 1/2;
+    padding-inline: 10.25rem;
+    margin-top: 66px;
+  }
+  .container .header .logo {
+    width: 200px;
+    height: 37px;
+    margin-top: 1.5rem;
+  }
+  .container .header .logo img {
+    width: 100%;
+  }
+  .container .hero {
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
   .container main {
     grid-column: 1/2;
     grid-row: 2/3;
+  }
+  .container main .main-container {
+    padding-inline: 10.25rem;
+  }
+  .container main .main-container .content {
+    padding-top: 134px;
+  }
+  .container main .main-container .content .h1 {
+    width: 75%;
+    text-align: left;
+    margin-inline: 0;
+    font-size: 3.125rem;
+  }
+  .container main .main-container .content p {
+    text-align: left;
+    margin-inline: 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .container main .main-container .form {
+    margin-inline: 0;
+    width: 28.75rem;
+  }
+  .container main .main-container .form .container-arrow {
+    width: 100px;
+    height: 58px;
+  }
+  .container main .main-container .form input[type=email] {
+    height: 58px;
   }
 }/*# sourceMappingURL=style.css.map */
