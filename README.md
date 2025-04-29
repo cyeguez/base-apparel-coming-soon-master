@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/cyeguez/base-apparel-coming-soon-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://cyeguez.github.io/base-apparel-coming-soon-master/)
 
 ## My process
 
